@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <style>
+        /* Define the gradient background */
+        body {
+            background: linear-gradient(to left, #6495ED, #fd1d1d, #fcb045);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style for the header */
+        header {
+            background-color: linear-gradient(to left, #6495ED, #fd1d1d, #fcb045);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Style for the navigation menu */
+        nav {
+            background-color: linear-gradient(to left, #6495ED, #fd1d1d, #fcb045);
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 5;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Style for the main content */
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: left;
+        }
+
+        /* Style for the footer */
+        footer {
+            background-color: linear-gradient(to left, #6495ED, #fd1d1d, #fcb045);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Our services.html">Our Services</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="About_us.html">About Us</a></li>
+            <li><a href="mission_goal.html">Goals and Mission</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+      <h1>Enquiry</h1>
+      <form action="https://formsubmit.co/yadavshivanshu010@gmail.com" method="POST">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="true">
+      <table>
+       <tr>
+        <td>Name :</td>
+        <td><input type="text" name="username" required></td>
+       </tr>
+       <tr>
+        <td>Message :</td>
+        <td><input type="text" name="message" required></td>
+       </tr>
+       <tr>
+        <td>Gender :</td>
+        <td>
+         <input type="radio" name="Gender" value="m" required> Male
+         <input type="radio" name="Gender"value="f" required> Female
+        </td>
+       </tr>
+       <tr>
+        <td>Email :</td>
+        <td><input type="email" name="email" required></td>
+       </tr>
+       <tr>
+        <td>Phone no :</td>
+        <td>
+         <select name="phoneCode" required>
+          <option selected hidden value=" ">Select code</option>
+          <option value="91">91</option>
+         </select>
+         <input type="phone" name="phone" required>
+        </td>
+       </tr>
+       <tr>
+        <td><input type="submit" value="Submit"></td>
+       </tr>
+      </table>
+     </form>
+
+
+     <div class="card2" id="feedback">
+      <h1>Feedback</h1>
+        
+    <script>
+    
+    $(':radio').change(function() {
+      console.log('New star rating: ' + this.value);
+    });
+    </script>
+    <form id="feedback_form"  method="post" action="https://formsubmit.co/yadavshivanshu010@gmail.com" method="POST">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="true">
+    <p class="select_star"> Select Star</p>
+      <div class="rating">
+      
+        <label>
+        <input type="radio" name="r_star" value="1" required>
+        <span class="icon">★</span>
+        </label>
+        <label>
+        <input type="radio" name="r_star" value="2" required>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        </label>
+        <label>
+        <input type="radio" name="r_star" value="3" required>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        <span class="icon">★</span>   
+        </label>
+        <label>
+        <input type="radio" name="r_star" value="4" required>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        </label>
+        <label>
+        <input type="radio" name="r_star"  value="5" required>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        </label>
+    
+      </div>
+      
+      <input type="name" name="r_name" placeholder="Your name" required><br>
+      <input type="email" name="r_email" placeholder="Your email id" ><br>
+      
+      <input type="number" max="999999999999" min="5555555555" name="r_contact" placeholder="Your contact "><br>
+      <textarea name="r_msg" placeholder="Your feedback "></textarea><br>
+      <input type="submit" name="submit_feedback" value="Submit Feedback"> 
+    
+     </form>
+    </div>
+    
+    
+</body>
+</html>
